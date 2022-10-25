@@ -4,4 +4,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'App\Http\Controllers\LoginController@login');
+Route::post('/', 'App\Http\Controllers\LoginController@login');
