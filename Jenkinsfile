@@ -27,7 +27,7 @@ pipeline {
                                 verbose: true,
                                 transfers: [
                                     sshTransfer(
-                                        execCommand: "cd /home/exam-back/ && git pull && sudo composer install --ignore-platform-reqs && sudo chmod 0777 -R storage/"
+                                        execCommand: "cd /home/exam-back/ && git pull && composer install && sudo chmod 0777 -R storage/"
                                     ),
                                 ]
                             )
